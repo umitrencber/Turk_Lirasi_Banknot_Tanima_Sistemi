@@ -70,14 +70,31 @@ Modelin eğitildiği ortam ve hiper-parametre ayarları:
 ---
 ## 🚀 Kurulum ve Çalıştırma
 
-1. **Gereksinimleri Yükleyin:**
+1. **Python Sürüm Kontrolü 🐍:**
+```bash
+python --version
+
+```
+* Eğer çıktı Python 3.10.11 ise: Bir sonraki adıma geçebilirsiniz.(2.Gereksinimleri Yükleyin)
+* Eğer Python yüklü değilse veya farklı bir sürümse:
+```bash
+winget install -e --id Python.Python.3.10
+
+```
+* Not: Bu komut çalışmazsa veya hata verirse, lütfen buradan (https://www.python.org/downloads/release/python-31011/) manuel olarak "Windows installer (64-bit)" indirip kurun. Kurulumda "Add Python to PATH" kutucuğunu işaretlemeyi unutmayın!
+* İndirdikten sonra emin olmak için tekrar kontrol edelim.Yeni bir cmd açınız.
+```bash
+python --version
+
+```
+2. **Gereksinimleri Yükleyin :**
 ```bash
 pip install -r requirements.txt
 
 ```
 
 
-2. **Uygulamayı Başlatın:**(Yada turk_lirasi_bankot.bat dosyası üzerinden otomatik çalıştırın)
+3. **Uygulamayı Başlatın :**(Yada turk_lirasi_bankot.bat dosyası üzerinden otomatik çalıştırın)
 ```bash
 python turk_lirasi_bankot.py
 
@@ -89,7 +106,7 @@ python turk_lirasi_bankot.py
 
 * `turk_lirasi_bankot.py`: Tahmin, video işleme ve kamera arayüzünü yöneten ana script.
 * `turk_lirasi_bankot.bat`: Scripti(`turk_lirasi_bankot.py`) cmd üzerinden çalıştırmaya yarar.
-* `best.pt`: Eğitim sonucunda elde edilen en başarılı ağırlık dosyası.(Eğitilen model)
+* `turk_lirasi_banknot_tanima_model.pt`: Eğitim sonucunda elde edilen en başarılı(best.pt) ağırlık dosyası.(Eğitilen model adı değiştirildi sadece)
 * `requirements.txt`: Projenin çalışması için gerekli minimal kütüphane listesi.
 
 ## 📈 Model Performansı ve Metrikler
