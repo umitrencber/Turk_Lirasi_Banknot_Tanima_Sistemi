@@ -1,2 +1,89 @@
-# Turk_Lirasi_Banknot_Tanima_Sistemi
- Bu proje Yapay Zeka Uygulamaları dersi kapsamında proje ödevi olarak geliştirilmiştir.Türk Lirasi banknot paralarını tespit etmek üzerine yolov8s.pt modeli eğitilmiştir.
+# 🇹🇷 Türk Lirası Banknot Tanıma Sistemi (YOLOv8s)
+
+Bu proje, derin öğrenme temelli nesne algılama algoritmaları kullanılarak Türk Lirası banknotlarını gerçek zamanlı olarak tanımak için geliştirilmiştir. Model, farklı ışık koşullarında ve açılarda yüksek doğrulukla çalışacak şekilde optimize edilmiştir.
+Not: Yapay Zeka Uygulamaları dersi kapsamında proje ödevi olarak geliştirilmiştir.Türk Lirasi banknot paralarını tespit etmek üzerine yolov8s.pt modeli eğitilmiştir.
+
+## 📝 Proje Bilgileri
+
+* **Proje Amacı:** Görme engellilere yardımcı araçlar veya otomatik ödeme sistemleri için temel bir para tanıma modülü oluşturmak.
+* **Model Mimarisi:** YOLOv8s (Small) - Hız ve doğruluk dengesi nedeniyle tercih edilmiştir.
+* **Geliştirici:** Ümit Rençber
+
+## 📊 Veri Seti Detayları
+
+* **Veri Seti Kaynağı:** Kaggle: https://www.kaggle.com/datasets/baltacifatih/turkish-lira-banknote-dataset
+* **Etiketleme Yöntemi:** Roboflow : https://app.roboflow.com/bankot-para-tanma
+* **Etiket Formatı:** YOLO PyTorch (txt)
+* **Sınıflar:**
+1. 5 
+2. 10 
+3. 20 
+4. 50 
+5. 100 
+6. 200 
+
+### Veri Dağılımı
+
+
+| **Eğitim (Train)** | 1697 |
+| **Doğrulama (Val)** | 360 |
+| **Test** | 359 |
+| **Toplam** | 2416 |
+
+## ⚙️ Eğitim Parametreleri ve Donanım
+
+Modelin eğitildiği ortam ve hiper-parametre ayarları:
+
+### Eğitim Parametreleri
+
+* **Epoch:** 100
+* **Batch Size:** 8
+* **Image Size:** 704
+* **Optimizer:** AdamW
+* **Learning Rate:** 0.001
+
+### Donanım Bilgileri
+
+* **GPU:** NVIDIA RTX 3050 4GB
+* **CPU:** Intel i7-12700H
+* **RAM:** 16GB
+* **OS:** Windows 11 Home
+
+## 🚀 Kurulum ve Çalıştırma
+
+1. **Gereksinimleri Yükleyin:**
+```bash
+pip install -r requirements.txt
+
+```
+
+
+2. **Uygulamayı Başlatın:**(Yada turk_lirasi_bankot.bat dosyası üzerinden otomatik çalıştırın)
+```bash
+python turk_lirasi_bankot.py
+
+```
+
+
+
+## 📂 Dosya Yapısı
+
+* `turk_lirasi_bankot.py`: Tahmin, video işleme ve kamera arayüzünü yöneten ana script.
+* `best.pt`: Eğitim sonucunda elde edilen en başarılı ağırlık dosyası.(Eğitilen model)
+* `requirements.txt`: Projenin çalışması için gerekli minimal kütüphane listesi.
+
+## 🛠 Kullanılan Teknolojiler
+
+* **Python 3.10.11**
+* **YOLOv8 (Ultralytics)**
+* **OpenCV** (Görüntü işleme ve görselleştirme)
+* **Tkinter** (Dosya seçimi arayüzü)
+
+---
+
+## 📈 Model Performansı ve Metrikler
+
+* **
+
+
+
