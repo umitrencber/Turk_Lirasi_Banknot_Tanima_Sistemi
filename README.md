@@ -83,7 +83,9 @@ python turk_lirasi_bankot.py
 
 ## 📈 Model Performansı ve Metrikler
 
-* **
+![Tüm değerlerin grafikleri](./yolov8s_banknot_modeli5-AdamW-704-90epoch/results.png)
+
+[📥 Tüm eğitim verilerini içeren results.csv dosyasını görüntülemek için tıklayın](./yolov8s_banknot_modeli5-AdamW-704-90epoch/results.csv)
 
 
 
