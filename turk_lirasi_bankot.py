@@ -1,14 +1,15 @@
 from ultralytics import YOLO
 import cv2
 import os
+import sys
 from tkinter import Tk, filedialog
 from datetime import datetime
 
 # =====================
 # KLASÖR AYARLARI
 # =====================
-BASE_DIR = r"C:\Users\beyza\OneDrive\Masaüstü\Türk Lirası Bankot Tanıma"
-MODEL_PATH = os.path.join(BASE_DIR, "best.pt")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "turk_lirasi_banknot_tanima_model.pt")
 OUTPUT_DIR = os.path.join(BASE_DIR, "results")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
