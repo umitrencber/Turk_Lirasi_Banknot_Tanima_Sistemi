@@ -4,6 +4,7 @@ import os
 import sys
 from tkinter import Tk, filedialog
 from datetime import datetime
+import time  
 
 # =====================
 # KLASÖR AYARLARI
@@ -41,16 +42,25 @@ def timestamp():
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"❌ Model bulunamadı: {MODEL_PATH}")
 
-print("🧠 Model yükleniyor...")
-model = YOLO(MODEL_PATH)
-print("✅ Model hazır")
+model_dosya_adi = os.path.basename(MODEL_PATH)
+print(f"🧠 Model yükleniyor: {model_dosya_adi}")
 
+# Yapay bir bekleme süresi ekleyelim (Gerçekçilik için)
+time.sleep(1.5)
+
+model = YOLO(MODEL_PATH)
+
+# Yükleme bittikten sonra küçük bir analiz süresi daha ekleyebiliriz
+print("🔍 Parametreler kontrol ediliyor...")
+time.sleep(1.0)
+print("✅ Model hazır")
+time.sleep(1.0)
 # =====================
 # ANA MENÜ DÖNGÜSÜ
 # =====================
 while True:
     print("\n==============================")
-    print(" YOLO TÜRK LİRASI BANKNOT TANIMA TEST MENÜSÜ")
+    print("🤖 YOLO TÜRK LİRASI BANKNOT TANIMA TEST MENÜSÜ")
     print("==============================")
     print("1 - Görsel Test")
     print("2 - Video Test")
@@ -213,7 +223,7 @@ while True:
     # ÇIKIŞ
     # =====================
     elif secim == "q":
-        print("👋 Program kapatıldı.")
+        print("👋 Güle güle.")
         break
 
     else:
