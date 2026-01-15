@@ -115,5 +115,20 @@ python turk_lirasi_bankot.py
 
 [📥 Tüm eğitim verilerini içeren results.csv dosyasını görüntülemek için tıklayın](./yolov8s_banknot_modeli5-AdamW-704-90epoch/results.csv)
 
+## 📷 Uygulamadan Görüntüler
+
+1. **Giriş Ekranı:**
+![Giriş Ekranı](img\image.png)
+
+2. **Görsel Test:**
+![Görselden Tespit](img\image-1.png)
+
+3. **Video Test:**
+https://github.com/user-attachments/assets/3c54a59c-67fd-4adc-b215-698c82d874a2
+
+
+
+
+
 
 
