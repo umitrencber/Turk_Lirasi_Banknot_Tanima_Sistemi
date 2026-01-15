@@ -124,7 +124,14 @@ python turk_lirasi_bankot.py
 ![Görselden Tespit](img\image-1.png)
 
 3. **Video Test:**
-https://github.com/umitrencber/Turk_Lirasi_Banknot_Tanima_Sistemi/releases/download/v1.0/video_test_boyut_kucultme.mp4
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/ec474c3f-74ee-44e5-bd4a-05f550dee424" width="800" controls>
+  </video>
+</div>
+
+
+
 
 
 
