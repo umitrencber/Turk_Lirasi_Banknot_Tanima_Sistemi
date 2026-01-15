@@ -118,10 +118,12 @@ python turk_lirasi_bankot.py
 ## 📷 Uygulamadan Görüntüler
 
 1. **Giriş Ekranı:**
-![Giriş Ekranı](img\image.png)
+
+![Giriş Ekranı](img/image.png)
 
 2. **Görsel Test:**
-![Görselden Tespit](img\image-1.png)
+
+![Görselden Tespit](img/image-1.png)
 
 3. **Video Test:**
 
